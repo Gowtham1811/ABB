@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="E2EProjectFramework.Framework.ServiceAppointmentListVewPage">
+      <class name="E2EProjectFramework.Framework.createTSEMultiCountry">
         <methods>
-          <include name="deleteTSE"/>
-          <include name="excelDataProvider"/>
+          <include name="logOut"/>
           <include name="tearDown"/>
-          <include name="selectServiceAppBeforeTest"/>
+          <include name="createTSEforMultiCountries" invocation-numbers="0"/>
+          <include name="excelDataProvider"/>
         </methods>
-      </class> <!-- E2EProjectFramework.Framework.ServiceAppointmentListVewPage -->
+      </class> <!-- E2EProjectFramework.Framework.createTSEMultiCountry -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
