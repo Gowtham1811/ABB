@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-FSL" class="navigator-link">
+              <span class="suite-name border-failed">FSL</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-FSL" class="navigator-link ">
+                    <span>C:\Users\002VIR744\Desktop\Gowtham\Alchemy\eclipse-workspace\Framework\backOfficeTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-FSL" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-FSL" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-FSL" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-FSL" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-FSL" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-FSL" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FSL" class="hide-methods failed suite-FSL"> (hide)</a> <!-- hide-methods failed suite-FSL -->
+                      <a href="#" panel-name="suite-FSL" class="show-methods failed suite-FSL"> (show)</a> <!-- show-methods failed suite-FSL -->
+                    </span>
+                    <div class="method-list-content failed suite-FSL">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FSL" title="E2EProjectFramework.Framework.createTSEMultiCountry" class="method navigator-link" hash-for-method="createTSEforMultiCountries(Brazil, jose.camargo@br.abb.com.comstage, Tests#30405060, SA-841569, Mandatory, Mandatory, Mandatory...)">createTSEforMultiCountries(Brazil, jose.camargo@br.abb.com.comstage, Tests#30405060, SA-841569, Mandatory, Mandatory, Mandatory...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FSL" title="E2EProjectFramework.Framework.ServiceAppointmentListVewPage" class="method navigator-link" hash-for-method="deleteTSE">deleteTSE</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FSL -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FSL" class="hide-methods passed suite-FSL"> (hide)</a> <!-- hide-methods passed suite-FSL -->
+                      <a href="#" panel-name="suite-FSL" class="show-methods passed suite-FSL"> (show)</a> <!-- show-methods passed suite-FSL -->
+                    </span>
+                    <div class="method-list-content passed suite-FSL">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FSL" title="E2EProjectFramework.Framework.createTSEMultiCountry" class="method navigator-link" hash-for-method="createTSEforMultiCountries(Germany, michael.maier@de.abb.com.comstage, India@1234567890, SA-849164, Mandatory, Mandatory, Manda...)">createTSEforMultiCountries(Germany, michael.maier@de.abb.com.comstage, India@1234567890, SA-849164, Mandatory, Mandatory, Manda...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FSL" title="E2EProjectFramework.Framework.ServiceAppointmentListVewPage" class="method navigator-link" hash-for-method="verifyColumnHeaders">verifyColumnHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FSL" title="E2EProjectFramework.Framework.ServiceAppointmentListVewPage" class="method navigator-link" hash-for-method="verifyListViewOptions">verifyListViewOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FSL" title="E2EProjectFramework.Framework.ServiceAppointmentListVewPage" class="method navigator-link" hash-for-method="verifySearchServiceAppointment">verifySearchServiceAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FSL -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FSL" class="panel FSL">
+          <div class="suite-FSL-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">E2EProjectFramework.Framework.ServiceAppointmentListVewPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteTSE">
+                  </a> <!-- deleteTSE -->
+                  <span class="method-name">deleteTSE</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;E2EProjectFramework.Framework.BrowserAction.findElementBy(org.openqa.selenium.By)&quot; is null
+	at E2EProjectFramework.Framework.ServiceAppointmentListVewPage.deleteTSE(ServiceAppointmentListVewPage.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FSL-class-failed -->
+          <div class="suite-FSL-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">E2EProjectFramework.Framework.createTSEMultiCountry</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createTSEforMultiCountries(Brazil, jose.camargo@br.abb.com.comstage, Tests#30405060, SA-841569, Mandatory, Mandatory, Mandatory...)">
+                  </a> <!-- createTSEforMultiCountries(Brazil, jose.camargo@br.abb.com.comstage, Tests#30405060, SA-841569, Mandatory, Mandatory, Mandatory...) -->
+                  <span class="method-name">createTSEforMultiCountries</span>
+                  <span class="parameters">(Brazil, jose.camargo@br.abb.com.comstage, Tests#30405060, SA-841569, Mandatory, Mandatory, Mandatory, Mandatory, Mandatory, Not Visible, Mandatory, Mandatory, Not Visible, Not Visible, Visible, Not Visible)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@name=&apos;save&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;IBM-BXD32F3&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\002VIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56438/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77c51cc373e5fecd94ba0fd1431986c9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at E2EProjectFramework.Framework.createTSEMultiCountry.createTSEforMultiCountries(createTSEMultiCountry.java:200)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FSL-class-failed -->
+          <div class="suite-FSL-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">E2EProjectFramework.Framework.ServiceAppointmentListVewPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyColumnHeaders">
+                  </a> <!-- verifyColumnHeaders -->
+                  <span class="method-name">verifyColumnHeaders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListViewOptions">
+                  </a> <!-- verifyListViewOptions -->
+                  <span class="method-name">verifyListViewOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchServiceAppointment">
+                  </a> <!-- verifySearchServiceAppointment -->
+                  <span class="method-name">verifySearchServiceAppointment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FSL-class-passed -->
+          <div class="suite-FSL-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">E2EProjectFramework.Framework.createTSEMultiCountry</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createTSEforMultiCountries(Germany, michael.maier@de.abb.com.comstage, India@1234567890, SA-849164, Mandatory, Mandatory, Manda...)">
+                  </a> <!-- createTSEforMultiCountries(Germany, michael.maier@de.abb.com.comstage, India@1234567890, SA-849164, Mandatory, Mandatory, Manda...) -->
+                  <span class="method-name">createTSEforMultiCountries</span>
+                  <span class="parameters">(Germany, michael.maier@de.abb.com.comstage, India@1234567890, SA-849164, Mandatory, Mandatory, Mandatory, Mandatory, Mandatory, Visible, Mandatory, Mandatory, Visible, Visible, Not Visible, Mandatory)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FSL-class-passed -->
+        </div> <!-- panel FSL -->
+        <div panel-name="test-xml-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\002VIR744\Desktop\Gowtham\Alchemy\eclipse-workspace\Framework\backOfficeTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;FSL&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;E2EProjectFramework.Framework.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BackOfficeApp&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;E2EProjectFramework.Framework.createTSEMultiCountry&quot;/&gt;
+      &lt;class name=&quot;E2EProjectFramework.Framework.ServiceAppointmentListVewPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BackOfficeApp --&gt;
+&lt;/suite&gt; &lt;!-- FSL --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FSL</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BackOfficeApp (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FSL</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FSL</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FSL');
+function tableData_FSL() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createTSEforMultiCountries')
+data.setCell(0, 2, 'E2EProjectFramework.Framework.createTSEMultiCountry')
+data.setCell(0, 3, 63572);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createTSEforMultiCountries')
+data.setCell(1, 2, 'E2EProjectFramework.Framework.createTSEMultiCountry')
+data.setCell(1, 3, 54551);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteTSE')
+data.setCell(2, 2, 'E2EProjectFramework.Framework.ServiceAppointmentListVewPage')
+data.setCell(2, 3, 27390);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySearchServiceAppointment')
+data.setCell(3, 2, 'E2EProjectFramework.Framework.ServiceAppointmentListVewPage')
+data.setCell(3, 3, 4777);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyColumnHeaders')
+data.setCell(4, 2, 'E2EProjectFramework.Framework.ServiceAppointmentListVewPage')
+data.setCell(4, 3, 207);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyListViewOptions')
+data.setCell(5, 2, 'E2EProjectFramework.Framework.ServiceAppointmentListVewPage')
+data.setCell(5, 3, 188);
+window.suiteTableData['FSL']= { tableData: data, tableDiv: 'times-div-FSL'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-FSL">
+              </div> <!-- times-div-FSL -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FSL</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">E2EProjectFramework.Framework.ServiceAppointmentListVewPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createTSE</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FSL" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">E2EProjectFramework.Framework.ServiceAppointmentListVewPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">excelDataProvider</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">E2EProjectFramework.Framework.createTSEMultiCountry</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">excelDataProvider</span>
+                <span class="method-start">14993 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createTSEforMultiCountries(Brazil, jose.camargo@br.abb.com.comstage, Tests#30405060, SA-841569, Mandatory, Mandatory, Mandatory...)</span>
+                <span class="method-start">15887 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">79813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">createTSEforMultiCountries(Germany, michael.maier@de.abb.com.comstage, India@1234567890, SA-849164, Mandatory, Mandatory, Manda...)</span>
+                <span class="method-start">81912 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">136463 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">E2EProjectFramework.Framework.ServiceAppointmentListVewPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">selectServiceAppBeforeTest</span>
+                <span class="method-start">138209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteTSE</span>
+                <span class="method-start">138546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">selectServiceAppBeforeTest</span>
+                <span class="method-start">166245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyColumnHeaders</span>
+                <span class="method-start">166433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">selectServiceAppBeforeTest</span>
+                <span class="method-start">166641 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyListViewOptions</span>
+                <span class="method-start">166745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">selectServiceAppBeforeTest</span>
+                <span class="method-start">166934 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchServiceAppointment</span>
+                <span class="method-start">167038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">171815 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">E2EProjectFramework.Framework.createTSEMultiCountry</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172061 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

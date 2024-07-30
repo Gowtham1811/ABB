@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="7" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-30T22:45:08 IST" name="FSL" finished-at="2024-07-30T22:48:00 IST" duration-ms="172355">
+    <groups>
+    </groups>
+    <test started-at="2024-07-30T22:45:08 IST" name="BackOfficeApp" finished-at="2024-07-30T22:48:00 IST" duration-ms="172355">
+      <class name="E2EProjectFramework.Framework.ServiceAppointmentListVewPage">
+        <test-method is-config="true" signature="excelDataProvider()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:45:08 IST" name="excelDataProvider" finished-at="2024-07-30T22:45:23 IST" duration-ms="14993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excelDataProvider -->
+        <test-method is-config="true" signature="selectServiceAppBeforeTest()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:26 IST" name="selectServiceAppBeforeTest" finished-at="2024-07-30T22:47:26 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectServiceAppBeforeTest -->
+        <test-method signature="deleteTSE()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:26 IST" name="deleteTSE" finished-at="2024-07-30T22:47:54 IST" duration-ms="27390" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "E2EProjectFramework.Framework.BrowserAction.findElementBy(org.openqa.selenium.By)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "E2EProjectFramework.Framework.BrowserAction.findElementBy(org.openqa.selenium.By)" is null
+at E2EProjectFramework.Framework.ServiceAppointmentListVewPage.deleteTSE(ServiceAppointmentListVewPage.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTSE -->
+        <test-method is-config="true" signature="selectServiceAppBeforeTest()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:54 IST" name="selectServiceAppBeforeTest" finished-at="2024-07-30T22:47:54 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectServiceAppBeforeTest -->
+        <test-method signature="verifyColumnHeaders()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:54 IST" name="verifyColumnHeaders" finished-at="2024-07-30T22:47:54 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyColumnHeaders -->
+        <test-method is-config="true" signature="selectServiceAppBeforeTest()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:54 IST" name="selectServiceAppBeforeTest" finished-at="2024-07-30T22:47:54 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectServiceAppBeforeTest -->
+        <test-method signature="verifyListViewOptions()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:54 IST" name="verifyListViewOptions" finished-at="2024-07-30T22:47:55 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyListViewOptions -->
+        <test-method is-config="true" signature="selectServiceAppBeforeTest()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:55 IST" name="selectServiceAppBeforeTest" finished-at="2024-07-30T22:47:55 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectServiceAppBeforeTest -->
+        <test-method signature="verifySearchServiceAppointment()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:55 IST" name="verifySearchServiceAppointment" finished-at="2024-07-30T22:47:59 IST" duration-ms="4777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchServiceAppointment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:E2EProjectFramework.Framework.ServiceAppointmentListVewPage@42b02722]" started-at="2024-07-30T22:47:59 IST" name="tearDown" finished-at="2024-07-30T22:48:00 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- E2EProjectFramework.Framework.ServiceAppointmentListVewPage -->
+      <class name="E2EProjectFramework.Framework.createTSEMultiCountry">
+        <test-method is-config="true" signature="excelDataProvider()[pri:0, instance:E2EProjectFramework.Framework.createTSEMultiCountry@7fb95505]" started-at="2024-07-30T22:45:23 IST" name="excelDataProvider" finished-at="2024-07-30T22:45:23 IST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excelDataProvider -->
+        <test-method signature="createTSEforMultiCountries(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:E2EProjectFramework.Framework.createTSEMultiCountry@7fb95505]" started-at="2024-07-30T22:45:23 IST" name="createTSEforMultiCountries" data-provider="dataProvider" finished-at="2024-07-30T22:46:27 IST" duration-ms="63572" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brazil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jose.camargo@br.abb.com.comstage]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tests#30405060]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SA-841569]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Not Visible]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Not Visible]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Not Visible]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Visible]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Not Visible]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[@name='save'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'IBM-BXD32F3', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\002VIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56438/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77c51cc373e5fecd94ba0fd1431986c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@name='save'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'IBM-BXD32F3', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\002VIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56438/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77c51cc373e5fecd94ba0fd1431986c9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at E2EProjectFramework.Framework.createTSEMultiCountry.createTSEforMultiCountries(createTSEMultiCountry.java:200)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTSEforMultiCountries -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:E2EProjectFramework.Framework.createTSEMultiCountry@7fb95505]" started-at="2024-07-30T22:46:27 IST" name="logOut" finished-at="2024-07-30T22:46:30 IST" duration-ms="2097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method signature="createTSEforMultiCountries(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:E2EProjectFramework.Framework.createTSEMultiCountry@7fb95505]" started-at="2024-07-30T22:46:30 IST" name="createTSEforMultiCountries" data-provider="dataProvider" finished-at="2024-07-30T22:47:24 IST" duration-ms="54551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Germany]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[michael.maier@de.abb.com.comstage]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[India@1234567890]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SA-849164]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Visible]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Visible]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Visible]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Not Visible]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Mandatory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTSEforMultiCountries -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:E2EProjectFramework.Framework.createTSEMultiCountry@7fb95505]" started-at="2024-07-30T22:47:24 IST" name="logOut" finished-at="2024-07-30T22:47:26 IST" duration-ms="1742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:E2EProjectFramework.Framework.createTSEMultiCountry@7fb95505]" started-at="2024-07-30T22:48:00 IST" name="tearDown" finished-at="2024-07-30T22:48:00 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- E2EProjectFramework.Framework.createTSEMultiCountry -->
+    </test> <!-- BackOfficeApp -->
+  </suite> <!-- FSL -->
+</testng-results>

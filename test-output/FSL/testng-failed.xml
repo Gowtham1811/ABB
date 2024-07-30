@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FSL]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="E2EProjectFramework.Framework.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="BackOfficeApp(failed)">
+    <classes>
+      <class name="E2EProjectFramework.Framework.ServiceAppointmentListVewPage">
+        <methods>
+          <include name="deleteTSE"/>
+          <include name="excelDataProvider"/>
+          <include name="tearDown"/>
+          <include name="selectServiceAppBeforeTest"/>
+        </methods>
+      </class> <!-- E2EProjectFramework.Framework.ServiceAppointmentListVewPage -->
+      <class name="E2EProjectFramework.Framework.createTSEMultiCountry">
+        <methods>
+          <include name="logOut"/>
+          <include name="tearDown"/>
+          <include name="createTSEforMultiCountries" invocation-numbers="0"/>
+          <include name="excelDataProvider"/>
+        </methods>
+      </class> <!-- E2EProjectFramework.Framework.createTSEMultiCountry -->
+    </classes>
+  </test> <!-- BackOfficeApp(failed) -->
+</suite> <!-- Failed suite [FSL] -->
