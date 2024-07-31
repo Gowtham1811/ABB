@@ -75,24 +75,27 @@ public class createTSEMultiCountry extends base {
 		browserAction.clickElement(salesforcePages.EngServiceAppoinment().EngServiceAppointmentTab);
 		browserAction.findElementBy(By.xpath("//button[@title='" + serviceAppointment + "']"));
 		browserAction.clickElement(By.xpath("//button[@title='" + serviceAppointment + "']"));
-		browserAction.waitforElement(By.xpath("//*[@title='" + serviceAppointment + "']"));
+		browserAction.waitforElement(By.xpath("//button[@title='" + serviceAppointment + "']"));
 		salesforcePages.WorkOrderNavigation().WorkOrderTimeBtn().click();
 		browserAction.waitforElement(salesforcePages.WorkOrderTimesheet().actualHoursColmnBy);
 		salesforcePages.WorkOrderTimesheet().createNewTSE().click();
 		ArrayList<String> CreateTSE = getDataFromExcel.getData(data2, country);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		browserAction.waitforElement(salesforcePages.WorkOrderTimesheet().inlineFormBy);
 		List<WebElement> tseFields = browserAction
 				.findElementsBy(By.xpath("//div[@class='tbody table-row active']//div[@class='table-cell']"));
 		for (WebElement tseField : tseFields) {
 			String attribute;
+			WebElement labels = tseField.findElement(By.xpath(".//*[@class='label']"));
+			String label = (String) js.executeScript("return arguments[0].textContent;", labels);
 			try {
+				if(label.toLowerCase().equals("activity type")) {
+					throw new RuntimeException();
+				}
 				attribute = tseField.findElement(By.xpath(".//*[@required]")).getAttribute("required");
 			} catch (Exception e) {
 				attribute = null;
 			}
-			WebElement labels = tseField.findElement(By.xpath(".//*[@class='label']"));
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			String label = (String) js.executeScript("return arguments[0].textContent;", labels);
 			switch (label.toLowerCase()) {
 			case "subject":
 				if (attribute != null) {
@@ -196,10 +199,10 @@ public class createTSEMultiCountry extends base {
 				break;
 			}
 		}	
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@name='save']")));
+		  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));
+		  //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@name='save']")));
 		  browserAction.clickElement(By.xpath("//button[@name='save']"));
-		  Thread.sleep(5000);
+		  wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//button[@name='save']")));
 	}
 
 	@AfterMethod

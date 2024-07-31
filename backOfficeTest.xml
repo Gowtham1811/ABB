@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="E2EProjectFramework.Framework.Listeners"></listener>
 </listeners>
-  <test thread-count="5" name="BackOfficeApp">
+  <test thread-count="1" name="BackOfficeApp">
     <classes>
       <class name="E2EProjectFramework.Framework.createTSEMultiCountry"/>
       <class name="E2EProjectFramework.Framework.ServiceAppointmentListVewPage"/>

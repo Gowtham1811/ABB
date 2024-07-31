@@ -103,11 +103,11 @@ public class ServiceAppointmentListVewPage extends base {
 		ArrayList<String> CreateTSE = resources.getDataFromExcel.getData(data,"CreateTSE");
 		browserAction.findElementBy(By.xpath("//button[@title='"+ CreateTSE.get(0) +"']"));
 		browserAction.clickElement(By.xpath("//button[@title='"+ CreateTSE.get(0) +"']"));
-		browserAction.waitforElement(By.xpath("//*[@title='"+CreateTSE.get(0)+"']"));
+		browserAction.waitforElement(By.xpath("//button[@title='"+CreateTSE.get(0)+"']"));
 		salesforcePages.WorkOrderNavigation().WorkOrderTimeBtn().click();	
 		browserAction.waitforElement(salesforcePages.WorkOrderTimesheet().actualHoursColmnBy);
-		browserAction.waitforElement(By.xpath("//a[contains(text(),'Jul 30')]"));
-		browserAction.findElementBy(By.xpath("//a[contains(text(),'Jul 30')]/ancestor::p //span[@class='timesheet_expand_collapsed']")).click();
+		browserAction.waitforElement(By.xpath("//a[contains(text(),'Jul 31')]"));
+		browserAction.findElementBy(By.xpath("//a[contains(text(),'Jul 31')]/ancestor::p //span[@class='timesheet_expand_collapsed']")).click();
 		browserAction.clickElement(By.xpath("//lightning-button-icon[@data-form-view='delete']"));
 		browserAction.clickElement(By.xpath("//button[text()='DELETE']"));
 		Thread.sleep(3000);

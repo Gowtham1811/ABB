@@ -10,18 +10,10 @@
         <methods>
           <include name="logOut"/>
           <include name="tearDown"/>
-          <include name="createTSEforMultiCountries" invocation-numbers="0 1"/>
+          <include name="createTSEforMultiCountries" invocation-numbers="1"/>
           <include name="excelDataProvider"/>
         </methods>
       </class> <!-- E2EProjectFramework.Framework.createTSEMultiCountry -->
-      <class name="E2EProjectFramework.Framework.ServiceAppointmentListVewPage">
-        <methods>
-          <include name="deleteTSE"/>
-          <include name="excelDataProvider"/>
-          <include name="tearDown"/>
-          <include name="selectServiceAppBeforeTest"/>
-        </methods>
-      </class> <!-- E2EProjectFramework.Framework.ServiceAppointmentListVewPage -->
     </classes>
   </test> <!-- BackOfficeApp(failed) -->
 </suite> <!-- Failed suite [FSL] -->

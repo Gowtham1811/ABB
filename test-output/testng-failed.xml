@@ -7,7 +7,7 @@
         <methods>
           <include name="logOut"/>
           <include name="tearDown"/>
-          <include name="createTSEforMultiCountries" invocation-numbers="0"/>
+          <include name="createTSEforMultiCountries" invocation-numbers="1"/>
           <include name="excelDataProvider"/>
         </methods>
       </class> <!-- E2EProjectFramework.Framework.createTSEMultiCountry -->
